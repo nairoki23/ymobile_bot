@@ -46,10 +46,10 @@ def get_info(PhoneNumber, password):
 
     print("\n\n\n")
     ds=data.find(class_="list-toggle-content js-toggle-content m-top-20").find_all("table")
-    print(ds[0].find("tbody").find("td").text.replace("		","").replace("\n",""))
-    print(ds[1].find("tbody").find_all("tr")[1].find("td").text.replace("		","").replace("\n",""))
-    print(ds[2].find("tbody").find("tr").find("td").text.replace("	","").replace("\n",""))
-    print(ds[3].find("tbody").find("tr").find("td").text.replace("		","").replace("\n",""))
+    #print(ds[0].find("tbody").find("td").text.replace("		","").replace("\n",""))
+    #print(ds[1].find("tbody").find_all("tr")[1].find("td").text.replace("		","").replace("\n",""))
+    #print(ds[2].find("tbody").find("tr").find("td").text.replace("	","").replace("\n",""))
+    #print(ds[3].find("tbody").find("tr").find("td").text.replace("		","").replace("\n",""))
     return {
         "kurikoshi":float(ds[0].find("tbody").find("td").text.replace("		","").replace("\n","").replace("GB","")),
         "kihon":float(ds[1].find("tbody").find_all("tr")[1].find("td").text.replace("		","").replace("\n","").replace("GB","")),

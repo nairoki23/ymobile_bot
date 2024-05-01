@@ -26,7 +26,7 @@ def monthFormat(mon):
 
 @client.event
 async def on_ready():
-    print("起動完了")
+    print("lunched")
     await tree.sync()#スラッシュコマンドを同期
 
 @tree.command(name="easy-check",description="かんたん確認(データ量残量)")
